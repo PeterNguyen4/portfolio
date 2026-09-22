@@ -6,6 +6,7 @@ function App() {
     <div
       style={{
         position: 'relative',
+        overflow: 'hidden',
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -17,10 +18,10 @@ function App() {
         alt=""
         style={{
           position: 'absolute',
-          bottom: '-20vh',
-          left: '-8vw',
-          width: '60%',
-          transform: 'rotate(-0.4deg)',
+          bottom: 0,
+          left: 0,
+          width: 'clamp(240px, 60vw, 1000px)',
+          transform: 'translate(-8%, 25%)',
         }}
       />
     </div>
